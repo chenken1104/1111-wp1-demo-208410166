@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import Menu_66 from './components/Menu_66';
 import items from './data';
-// import Category_66 from './components/Category_66';
+import Category_66 from './components/Category_66';
 
-// const allCategories = ['all', 'breakfast', 'lunch', 'shakes', 'dinner'];
+const allCategories = ['all', 'breakfast', 'lunch', 'shakes', 'dinner'];
 
 const App_66 = () => {
   const [menuItems, setMenuItems] = useState(items);
-  // const [categories, setCategories] = useState(allCategories);
+  const [categories, setCategories] = useState(allCategories);
 
   console.log('menuItems', menuItems);
   return (
@@ -18,7 +18,7 @@ const App_66 = () => {
         <div className="underline"></div>
       </div>
       {/* filter buttons */}
-      {/* <Category_66 categories={categories} /> */}
+      <Category_66 categories={categories} />
     {/* menu items */}
     <Menu_66 items={menuItems} />
     </section>

@@ -1,16 +1,17 @@
 import React from 'react'
 
-const Category_66 = ({Categories}) => {
-    console.log('categories', Categories);
+
+const Category_66 = ({categories}) => {
+    // console.log('categories', Categories);
     return (
         <div className="btn-container">
-          { Categories.map( (item) => {
-            const {id, Category} = item;
+          { categories.map( (item) => {
+            const {id, category} = item;
             return (
                 <button key={id}
                 type="button" 
                 className="filter-btn" 
-                data-id={Category}>
+                data-id={category}>
                 {item}
                 </button>
             )
